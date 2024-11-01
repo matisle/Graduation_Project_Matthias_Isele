@@ -175,7 +175,7 @@ if page == pages[3] :
   st.header("Energy Suppliers on Trustpilot - Customer Level", divider='green')
   st.subheader("User activity at Trustpilot")
   st.markdown("We see a **strong boost** of customer posts in the **pandemic years 2020-2022**. User activity **increased drastically in 2023**, partially due to the **energy crisis** caused by the war in Ukraine. The threshold of **more than 1500 comments** was **first reached 2019**, reaching **25,000 comments by 2023**. The true number of comments at the end of 2023 is expected to be higher, as the figure is to date September 2023.")
-  st.image("number_comments_year.PNG")
+  st.image("Number_comments_year.PNG")
   st.subheader("Distribution of customer votings")
   st.markdown(" Customers **tend to review** only if their experience is **on the extremes**, i.e. bad (1 star) or great or excellent (4 or 5 stars). In particular, 69% of reviews are either great or excellent, 25% of reviews are bad, and 6% of reviews are poor or average. The **distribution of customer votings** is approximately **binary**.")
   st.image("star_count.PNG")
