@@ -175,7 +175,7 @@ if page == pages[3] :
   st.header("Energy Suppliers on Trustpilot - Customer Level", divider='green')
   st.subheader("User activity at Trustpilot")
   st.markdown("We see a **strong boost** of customer posts in the **pandemic years 2020-2022**. User activity **increased drastically in 2023**, partially due to the **energy crisis** caused by the war in Ukraine. The threshold of **more than 1500 comments** was **first reached 2019**, reaching **25,000 comments by 2023**. The true number of comments at the end of 2023 is expected to be higher, as the figure is to date September 2023.")
-  st.image("number_comments_year.PNG")
+  st.image("Number_comments_year.PNG")
   st.subheader("Distribution of customer votings")
   st.markdown(" Customers **tend to review** only if their experience is **on the extremes**, i.e. bad (1 star) or great or excellent (4 or 5 stars). In particular, 69% of reviews are either great or excellent, 25% of reviews are bad, and 6% of reviews are poor or average. The **distribution of customer votings** is approximately **binary**.")
   st.image("star_count.PNG")
@@ -437,7 +437,7 @@ if page == pages[5] :
   st.markdown('We train a **logistic regression model** on the numeric columns log_Words_Comment, log_Words_Headline, Stars_geq4_TF. The test set is 20% of the total population. The model with default hyper parameters suppresses the first two numeric columns, i.e. it reduces to a copy of Stars_geq4_TF. It is exactly the 9 cases discussed that it cannot predict correctly, neither on the training, nor on the test set. We reach an astonishing accuracy on the total data set of 1 - 9/4965= 99.82%.')
   st.markdown(":green[Octopus Energy]")
   st.markdown('We predict log_Words_Answer on the numerical variables log_Words_Comment, log_Words_Headline, Stars_min_max_scaled. A **standard scaler** is applied on the two logarithmic varables. We will check the performance of several models (default hyperparameters) on a test set of test size 20%. This includes a custom model defined as follows: On the training set, compute the averages of log_Words_Answer grouped by Stars_min_max_scaled. On the test set, the predictions are defined as the computed averages (learned from the test set) rise to Stars_min_max_scaled. The results are collected in the following table. ')
-  st.image('results_regression_oct.png')
+  st.image('results_regression_oct.PNG')
   # sentiment analysis
   st.subheader('Sentiment analysis')
   st.markdown(":green[E.ON Energy]")
