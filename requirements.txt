@@ -1,3 +1,4 @@
+scikit-learn
 matplotlib==3.8.4
 nltk==3.8.1
 numpy==2.1.2
@@ -5,4 +6,3 @@ pandas==2.2.3
 plotly==5.22.0
 scipy==1.14.1
 seaborn==0.13.2
-scikit-learn
