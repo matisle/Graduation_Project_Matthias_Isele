@@ -460,8 +460,14 @@ if page == pages[5] :
   nltk.download('stopwords')
   from nltk.corpus import stopwords
 
-  vectorizer = pickle.load(open("vectorizer_EON", 'rb'))
-  clf = pickle.load(open("GradientBoostingClassifier_EON", 'rb'))
+  #vectorizer = pickle.load(open("vectorizer_EON", 'rb'))
+  #clf = pickle.load(open("GradientBoostingClassifier_EON", 'rb'))
+
+  from joblib import Parallel, delayed 
+  import joblib   
+  vectorizer = joblib.load('vectorizer_EON_joblib.pkl') 
+  clf = joblib.load('GradientBoostingClassifier_EON_joblib.pkl') 
+  
 
   comment = st.text_input('Customer comment:', 'Sehr schlechter Service! Habe 10 mal angerufen!')
 
@@ -494,9 +500,9 @@ if page == pages[5] :
       else: 
         return reply_to_negative_comment
 
-  st.text_area('Standartization and vectorization:',standardize_comment(comment))
+  st.text_area('Standartization:',standardize_comment(comment))
   
-  st.write(vectorize(comment))
+  #st.write(vectorize(comment))
 
   st.text_area('Modeled answer of E.ON Energy:',predict_answer(comment), height=100)
   # st.write(predict_answer(comment))
