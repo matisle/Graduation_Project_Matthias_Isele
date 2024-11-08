@@ -14,7 +14,9 @@ page=st.sidebar.radio("Learn more about ...", pages)
 #st.sidebar.title("Authors")
 #st.sidebar.link_button("Stefanie Arlt", "https://www.linkedin.com/in/stefanie-arlt-augsburg-germany/?locale=en_US")
 #st.sidebar.link_button("Matthias Isele", "https://www.linkedin.com/in/mat-isle-24a665270/")
-
+st.sidebar.subheader('Matthias Isele')
+st.sidebar.subheader('iselema@gmx.de')
+st.sidebar.subheader('+49 160 94978140')
 
 # page 0: Introduction to German energy suppliers, Trustpilot and the project goal - Stefanie
 if page == pages[0] : 
