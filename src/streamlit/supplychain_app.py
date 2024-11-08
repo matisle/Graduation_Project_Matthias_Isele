@@ -11,7 +11,7 @@ st.title("Customer Satisfaction of the German Energy Supply Chain")
 st.sidebar.title("German Energy Suppliers on Trustpilot")
 pages=["Introduction: The Project and the German Energy Market", "Webscraping", "Energy Suppliers - Company Level", "Energy Suppliers - Customer Level", "Modeling: Predicting Star Ratings and Keyword Analysis", "Modeling: Predicting Company Answers", "Outlook: Practical Application"]
 page=st.sidebar.radio("Learn more about ...", pages)
-st.sidebar.title("Authors")
+#st.sidebar.title("Authors")
 #st.sidebar.link_button("Stefanie Arlt", "https://www.linkedin.com/in/stefanie-arlt-augsburg-germany/?locale=en_US")
 #st.sidebar.link_button("Matthias Isele", "https://www.linkedin.com/in/mat-isle-24a665270/")
 
